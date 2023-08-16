@@ -62,7 +62,7 @@ Este grafico muestra la variacion de monedas en circulacion de las monedas respa
 
 Puede verse la variacion en escalon de la moneda XAUT a diferencia de la monenda PAXG. A que se debe esta variacion podria estudiarse en un futuro.
 
-### **Conclusion 8**
+#### **Conclusion 8**
 
 Del conjunto de monedas con "precio variable", la que tiene **menor** variacion de precio en el intervalo de tiempo dado de 4 dias, es bitcoin, seguida por ethereum.
 
