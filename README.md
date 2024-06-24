@@ -2,7 +2,7 @@
 
 ## Eleccion de las monedas:
 
-Entendiendo que las monedas mas valoradas son las que tienen mayor capitalizacion de mercado, el primer criterio para la elección sera la capitalizacion de mercado. Por otro lado, como se haran comparaciones entre las monedas, es importante distinguir las monedas estables de las que tienen mayor variacion. Por ello, se eligen 5 monedas de la categoria Layer-1 (Dogecoin no es del tipo layer_1) y 5 monedas del tipo StableCoin.
+Entendiendo que las monedas mas valoradas son las que tienen mayor capitalizacion de mercado, este sera el primer criterio para la elección. Por otro lado, como se harán comparaciones entre las monedas, es importante distinguir las monedas estables de las que tienen mayor variacion. Por ello, se eligen 5 monedas de la categoria Layer-1 (Dogecoin no es del tipo layer_1) y 5 monedas del tipo StableCoin.
 
 Las 4 primeras monedas de Layer-1 son elegidas por capitalizacion de mercado, la quinta; Dogecoin es elegida dado que mediante sucesivos Tweets, Elon Musk la recomendaba y la des recomendaba de manera frecuente. Es por ello que el driver para su movimiento de precio es en esos casos distinto a las otras monedas que generalmente su variacion de precio esta relacionada al Bitcoin. Para estudiar estas relaciones, se elige Doge por fuera del criterio de la capitalizacion de mercado.
 
@@ -39,7 +39,7 @@ De las 10055 monedas, solo bitcoin tiene el 48.2 % del total del marketcap, y en
 
 #### **Conclusion 2**
 
-En el top 5 de arriba, solo figura una sola moneda del tipo "stablecoin": tether, que se encuentra en el puesto 3. En el puesto 6 figura la segunda, usd-coin.
+En el top 5, solo figura una sola moneda del tipo "stablecoin": tether, que se encuentra en el puesto 3. En el puesto 6 figura la segunda, usd-coin.
 
 #### **Conclusion 3**
 
@@ -65,7 +65,6 @@ Puede verse la variacion en escalon de la moneda XAUT a diferencia de la monenda
 #### **Conclusion 8**
 
 Del conjunto de monedas con "precio variable", la que tiene **menor** variacion de precio en el intervalo de tiempo dado de 4 dias, es bitcoin, seguida por ethereum.
-
 
 
 
