@@ -1,4 +1,4 @@
-# Proyecto_2
+# Análisis de Criptomonedas
 
 ## Eleccion de las monedas:
 
