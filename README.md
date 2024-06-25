@@ -1,34 +1,26 @@
 # Análisis de Criptomonedas
 
-## Eleccion de las monedas:
+En este trabajo de origen académico se realiza un análisis de las criptomonedas. Talvez para entendidos en el tema sea de poca rigurosidad, pero es un primer estudio a cerca de los distintos tipos de monedas según su filosofía, la capitalización, el precio, la cantidad de monedas emitidas, etc.
 
-Entendiendo que las monedas mas valoradas son las que tienen mayor capitalizacion de mercado, este sera el primer criterio para la elección. Por otro lado, como se harán comparaciones entre las monedas, es importante distinguir las monedas estables de las que tienen mayor variacion. Por ello, se eligen 5 monedas de la categoria Layer-1 (Dogecoin no es del tipo layer_1) y 5 monedas del tipo StableCoin.
+## Eleccion de las monedas a analizar:
 
-Las 4 primeras monedas de Layer-1 son elegidas por capitalizacion de mercado, la quinta; Dogecoin es elegida dado que mediante sucesivos Tweets, Elon Musk la recomendaba y la des recomendaba de manera frecuente. Es por ello que el driver para su movimiento de precio es en esos casos distinto a las otras monedas que generalmente su variacion de precio esta relacionada al Bitcoin. Para estudiar estas relaciones, se elige Doge por fuera del criterio de la capitalizacion de mercado.
+Entendiendo que las monedas mas valoradas son las que tienen mayor capitalizacion de mercado, este será el primer criterio para la elección. Por otro lado, como se harán comparaciones entre distintas monedas, es importante distinguir las del tipo "estables" de las que tienen variacion libre. Por ello, se eligen 5 monedas de la categoria Layer-1 (Dogecoin no es del tipo layer_1) y 5 monedas del tipo StableCoin.
 
-Por el lado de las stable-coin, las 3 primeras elegidas (Tether, Usd-coin, Dai) estan en orden de capitalización de mercado, pero tambien es importante destacar que tanto Tether como Usd-coin estan respaldadas en dolares. En tanto que Dai es una moneda que no tiene respaldo en dolares fisicos, sino que su precio esta controlado por distintos algoritmos que emiten o queman monedas para mantener el precio. Por ultimo, las otras dos monedas restantes son respaldadas en oro. Esta diversidad en fundamentos, alienta la búsqueda de información valiosa desde los datos.
 
 En la siguiente lista se pueden ver las monedas elegidas para el analisis.
 
-CoinList = 'bitcoin', 'ethereum', 'binancecoin', 'solana', 'dogecoin', 'tether', 'usd-coin', 'dai', pax-gold', 'tether-gold'
+* bitcoin
+* ethereum
+* binancecoin
+* solana
+* dogecoin
+* tether
+* usd-coin
+* dai
+* pax-gold
+* tether-gold
 
-### Funciones utilizadas:
-**date_price_market_caps_volume(coin):**
-
-Esta funcion utiliza el get de coingecko para tomar el precio, market_cap, total_volumes. Se cambian Nans por el valor al siguiente muestra. 
-Luego se realizan algunas transformaciones, se agregan columnas de caracteristicas normalizadas como precio , marketcap, y volumen, todas ellas respecto al maximo y se expresan en %. Estos dataframes tendran una granularidad diaria.
-Se corroboró que solo algunas monedas tienen valores Nan, y las que lo tienen, lo tienen en 'market_cap' 
-Con esta funcion se generan 10 DataFrames.
-
-**dicc_nomb(df, coin):**
-
-Funcion utilizada para cambiar los nombres que tienen por defecto los DataFrames. Se le agrega al final del nombre de cada campo el nombre de la moneda para poder realizar luego un merge.
-
-**OHLC(coin):**
-Esta funcion genera un dataframe con los datos de: precio de apertura, precio de cierre, maximo minimo del intevalo de tiempo. El intervalo de tiempo es 4 dias. Ademas se crean otras dos columnas, variacion entre apertura y cierre respecto a la apertura, y variacion entre max y min respecto a la media del intervalo en %.
-Se ha comprobado que no requiere que se realicen eliminacion de nulos o Nans.
-En la funcion, se agregan dos columnas, una para Variacion respecto apertura / cierre y otra para la variacion respecto al max / min del intervalo.
-
+La información es extraida a partir de la API de coingeko, a partir de ella, se realizan diferentes gráficos observando distintas caracteristicas de cada moneda en particular. Para ello ver el archivo 
 
 
 
